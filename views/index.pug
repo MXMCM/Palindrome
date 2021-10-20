@@ -1,0 +1,26 @@
+extends layout
+
+block content
+  h1 Palindrome Checker
+  form(method="POST" action="/")
+    label(for="userText") Enter Your text here:
+    br
+    input(type="text" id="userText" name="userText" value=`${phrase}`)
+    br
+    br
+    button(type="submit") Submit
+    if message
+      p=message
+      p=reverse
+      br
+      br
+      br
+      br
+      br
+      br
+      h2 Palindrome Examples
+      p madam
+      p radar
+      p refer
+
+
